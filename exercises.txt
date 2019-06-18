@@ -1,0 +1,33 @@
+BST for 3,1,4,6,9,2,5,7
+                                3
+                              /    \
+                            1        4
+                              \       \
+                               2        6
+                                       / \
+                                      5    9
+                                          /
+                                         7
+
+BST for E A S Y Q U E S T I O N
+                                 E
+                              /    \
+                            A        S
+                                    /  \
+                                   Q    Y    
+                                 /     /
+                                I     U
+                                 \    /
+                                  O  S
+                                /     \
+                               N       T
+
+What does this do?
+function tree(t){
+    if(!t){
+        return 0;
+    }
+    return tree(t.left) + t.value + tree(t.right)
+}
+
+Returns the values of a binary search tree recursively down the tree
